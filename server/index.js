@@ -2,8 +2,14 @@ const express = require("express")     // експорт express у змінну
 const mongoose = require("mongoose")   // експорт mongoose у змінну
 const config = require("config")       // експорт config у змінну
 
+const authRouter = require("./routes/auth.routes") // імпортуємо роутер
+
 // за допомогою express створюємо сервер
 const app = express()
+// так як express не може сам розпарсити json стрічку, то вказуємо це тут, у функцію use передаємо express.json
+app.use(express.json())
+// першим параметром в функції use вказуємо url по якому роутер буде оброблюватися, а другим передаємо роутер
+app.use("/api/auth", authRouter)
 // за допомогою функції get у config по ключу отримаємо значення з файлу default.json
 const PORT = config.get('serverPort')
 
@@ -28,5 +34,5 @@ const start = async () => {
     }
 }
 
-// виклакаємо зстворену функцію
+// викликаємо створену функцію
 start()
