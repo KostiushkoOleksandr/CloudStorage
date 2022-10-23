@@ -2,6 +2,8 @@ const Router = require("express");      // експортуємо Router з expr
 const User = require("../models/User")  // експортуємо модель користувача
 const bcrypt = require("bcryptjs")      // експортуємо bcrypt для хешування пароля
 const {check, validationResult} = require("express-validator") // потрібно для того, якщо на сервер відправлять пустий пароль, або не валідну пошту
+const jwt = require("jsonwebtoken") // експортуємо jwt з jsonwebtoken
+const config = require("config")
 
 // створюємо об'єкт користувача
 const router = new Router()
@@ -43,6 +45,52 @@ router.post('/registration',
             res.json({message: "User was created"})
         } catch (e) {
             // вивід потенційних помилок у влоги 
+            console.log(e)
+            // після чого відразу відправляти користувачу відповідь "Server error"
+            res.send({message: "Server error"})
+        }
+    })
+
+
+    router.post('/login',
+    // стрілкова функція, де першим параметром запит, а другим відповідь
+    async (req, res) => {
+        try {
+            // отримаємо email, password з тіла запиту
+            const {email, password} = req.body
+            // шукаємо юзера по email
+            const user = await User.findOne({email})
+            // задаємо умову при якій, користувач не буде знайдений, повернемо помилку
+            if (!user) {
+                return res.status(404).json({message: "User not found"})
+            }
+            // якщо ж користувач був знайдений, порівнюємо пароль, отриманий в запиті з паролем, який знаходиться в базі даних
+            // але, так як пароль в базі даних в зашифрованому стані, використовуємо модуль bcrypt з функцією compareSync, яка порівнює
+            // заштфрований пароль та ні.
+            // Далі якщо паролі збігаються функція поверне true, в іншому випадку помилку.
+            const isPassValid = bcrypt.compareSync(password, user.password)
+            if (!isPassValid) {
+                return res.status(400).json({message: "Invalid password"})
+            }
+            // створюємо token в якому визиваємо функцію sign яка приймає тр параметри:
+            // перший параметр передаємо об'єкт з даними, які хочемо помістити в токен (id користувача)
+            // другим параметром передаю ключ по якому буде здійснюватися шифрування в функцію sign
+            // в останній передаємо об'єкт, в якому зазаначаємо скільки токен буде дійсний
+            const token = jwt.sign({id: user.id}, config.get("secretKey"), {expiresIn: "1h"})
+            // повертаємо токен на клієнт
+            return res.json({
+                token,
+                // повертаємо дані про юзера, крім пароля, він приходить у шифрованому виді
+                user: {
+                    id: user.id,
+                    email: user.email,
+                    diskSpace: user.diskSpace,
+                    usedSpace: user.usedSpace,
+                    avatar: user.avatar
+                }
+            })
+        } catch (e) {
+            // вивід потенційних помилок у влоги
             console.log(e)
             // після чого відразу відправляти користувачу відповідь "Server error"
             res.send({message: "Server error"})
