@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
+* {
+    padding: 0;
+    box-sizing: border-box;    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+input {
+  border: none;
+  border-bottom: #566885 solid 1px;
+  background: transparent;
+  width: 100%;
+  padding: 1px;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.01);
+}
+
+::-webkit-input-placeholder {
+  color: #566885;
+  font-weight: 700;
+}
+
+:-ms-input-placeholder {
+  color: #566885;
+  font-weight: 700;
+}
+
+::-moz-placeholder {
+  color: #566885;
+  font-weight: 700;
+}
+
+:-moz-placeholder {
+  color: #566885;
+  font-weight: 700;
+}

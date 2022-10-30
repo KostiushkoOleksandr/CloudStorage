@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
+* {
+    padding: 0;
+    box-sizing: border-box;    
+} */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f2f2f2;
+}
+
+
+.navbar {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+.navbar__header {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.navbar__login {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbar__exit{
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #EC5C93;
+}
+
+
+.navbar__search {
+  width: 300px;
+  margin-left: auto;
+}
+
+
+
+.navbar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo{
+  height: 70px;
+  width: auto;
+}

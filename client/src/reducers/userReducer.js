@@ -1,19 +1,31 @@
+const SET_USER = "SET_USER"
+const LOGOUT = "LOGOUT"
 
-// створюємо редюсер стан якого по замовчуванню
 const defaultState = {
-    // додаємо об'єкт поточного користувача
-    currentUser: {}, 
-    // та змінну яка відповідає за те чи користувач залогінився чи ні
+    currentUser: {},
     isAuth: false
 }
 
-// створюємо сам редюсер, який першим параметром приймає state, другим action
 export default function userReducer(state = defaultState, action) {
-    // далі в залежності від типу action, повинні виконувати ту чи іншу дію
-    // створюємо switch, який по замовчуванню буде повертати state
     switch (action.type) {
-        
+        case SET_USER:
+            return {
+                ...state,
+                currentUser: action.payload,
+                isAuth: true
+            }
+        case LOGOUT:
+            localStorage.removeItem('token')
+            return {
+                ...state,
+                currentUser: {},
+                isAuth: false
+            }
         default:
             return state
     }
 }
+
+
+export const setUser = user => ({type: SET_USER, payload: user})
+export const logout = () => ({type: LOGOUT})
