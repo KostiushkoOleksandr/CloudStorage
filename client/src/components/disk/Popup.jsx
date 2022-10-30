@@ -19,7 +19,7 @@ const Popup = () => {
             <div className="popup__content" onClick={(event => event.stopPropagation())}>
                 <div className="popup__header">
                     <div className="popup__title">Створити нову папку</div>
-                    <button className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))}>x</button>
+                    <button className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))}>Exit</button>
                 </div>
                 <Input type="text" placeholder="Введіть назву..." value={dirName} setValue={setDirName}/>
                 <button className="popup__create" onClick={() => createHandler()}>Створити</button>

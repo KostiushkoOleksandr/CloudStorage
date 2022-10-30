@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
-* {
-    padding: 0;
-    box-sizing: border-box;    
-} */
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: #f2f2f2;
@@ -29,14 +25,16 @@ body {
   margin-left: auto;
   margin-right: 20px;
   cursor: pointer;
+  
 }
 
+
 .navbar__exit{
-  margin-left: auto;
-  margin-right: 20px;
+  margin-left: 250px;
   cursor: pointer;
   text-decoration: none;
   color: #EC5C93;
+  margin-right: 20px;
 }
 
 
@@ -44,7 +42,6 @@ body {
   width: 300px;
   margin-left: auto;
 }
-
 
 
 .navbar__avatar {
@@ -60,6 +57,7 @@ body {
 }
 
 .navbar__logo{
-  height: 70px;
+  height: 60px;
   width: auto;
+  margin-top: 10px;
 }
