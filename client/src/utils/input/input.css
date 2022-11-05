@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic'); */
   
 
-body {
+/* body {
     font-family: 'Linearicons', sans-serif;
-}
+} */
 
 
 input {
-  border: none;
-  border-bottom: #566885 solid 1px;
-  background: transparent;
-  width: 100%;
+  /* border: none; */
+  border-bottom: solid 1px;
+  /* background: transparent; */
+  width: 250px;
   padding: 1px;
 }
 
-input:focus {
+/* input:focus {
   outline: none;
   transform: scale(1.01);
 }
@@ -37,4 +37,4 @@ input:focus {
 :-moz-placeholder {
   color: #566885;
   font-weight: 700;
-}
+} */

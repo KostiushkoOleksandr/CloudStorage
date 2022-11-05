@@ -3,6 +3,7 @@ import UploadFile from "./UploadFile";
 import "./uploader.css";
 import { useDispatch, useSelector } from "react-redux";
 import { hideUploader } from "../../../reducers/uploadReducer";
+import Exit from "../../../assets/img/close-outline.svg";
 
 const Uploader = () => {
   const files = useSelector((state) => state.upload.files);
@@ -13,13 +14,8 @@ const Uploader = () => {
     isVisible && (
       <div className="uploader">
         <div className="uploader__header">
-          <div className="uploader__title">Завантаження</div>
-          <button
-            className="uploader__close"
-            onClick={() => dispatch(hideUploader())}
-          >
-            Exit
-          </button>
+          <div className="uploader__title">Loading</div>
+          <img src={Exit} alt="" className="uploader__close" onClick={() => dispatch(hideUploader())} />
         </div>
         {files.map((file) => (
           <UploadFile key={file.id} file={file} />
@@ -28,5 +24,4 @@ const Uploader = () => {
     )
   );
 };
-
 export default Uploader;

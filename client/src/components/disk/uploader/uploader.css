@@ -2,7 +2,7 @@
   height: 300px;
   width: 300px;
   position: fixed;
-  background-color: #566885;
+  background-color: #9194C7;
   bottom: 0;
   right: 0;
   padding: 20px;
@@ -22,6 +22,14 @@
 
 .uploader__close {
   padding: 3px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.upload-file__remove{
+  padding: 3px;
+  width: 25px;
+  cursor: pointer;
 }
 
 .upload-file {

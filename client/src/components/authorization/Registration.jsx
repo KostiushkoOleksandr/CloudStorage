@@ -18,13 +18,13 @@ const Registration = () => {
           value={email}
           setValue={setEmail}
           type="text"
-          placeholder="email..."
+          placeholder="Email"
         />
         <Input
           value={password}
           setValue={setPassword}
           type="password"
-          placeholder="password..."
+          placeholder="Password"
         />
         </div>
         <button

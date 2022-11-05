@@ -51,7 +51,7 @@ const Navbar = () => {
             onChange={(e) => searchChangeHandler(e)}
             className="navbar__search"
             type="text"
-            placeholder="What are you looking for?"
+            placeholder="Find your document"
           />
         )}
         {!isAuth && (

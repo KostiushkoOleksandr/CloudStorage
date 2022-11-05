@@ -3,6 +3,7 @@ import Input from "../../utils/input/Input";
 import {useDispatch, useSelector} from "react-redux";
 import {setPopupDisplay} from "../../reducers/fileReducer";
 import {createDir} from "../../actions/file";
+import Exit from "../../assets/img/close-outline.svg";
 
 const Popup = () => {
     const [dirName, setDirName] = useState('')
@@ -18,11 +19,11 @@ const Popup = () => {
         <div className="popup" onClick={() => dispatch(setPopupDisplay('none'))} style={{display: popupDisplay}}>
             <div className="popup__content" onClick={(event => event.stopPropagation())}>
                 <div className="popup__header">
-                    <div className="popup__title">Створити нову папку</div>
-                    <button className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))}>Exit</button>
+                    <div className="popup__title">Create a new folder</div>
+                    <img src={Exit} alt="" className="popup__close" onClick={() => dispatch(setPopupDisplay('none'))} />
                 </div>
-                <Input type="text" placeholder="Введіть назву..." value={dirName} setValue={setDirName}/>
-                <button className="popup__create" onClick={() => createHandler()}>Створити</button>
+                <Input type="text" placeholder="Enter a name..." value={dirName} setValue={setDirName}/>
+                <button className="popup__create" onClick={() => createHandler()}>Create</button>
             </div>
         </div>
     );

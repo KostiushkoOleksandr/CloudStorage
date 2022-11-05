@@ -1,8 +1,8 @@
 body {
-  background: #DCDDDF;
+  /* background: #DCDDDF; */
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1em;
-  background: url('https://img.freepik.com/free-vector/magnifying-glass-with-file-searching_52683-22967.jpg?w=740&t=st=1667141541~exp=1667142141~hmac=52d5d7b101e9d07865c782b5a38b205e32063dfed090cfe8a5b56a74203c3401') no-repeat right fixed;
+  background: url('https://i.ibb.co/7yWFsqp/background.png') no-repeat center fixed;
 }
 
 h2 {
@@ -88,7 +88,6 @@ p {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: inset 0 0 3px #65686E;
-  border-bottom: 1px solid #FFF;
 }
 
 input {
@@ -97,7 +96,7 @@ input {
   border: 0;
   line-height: 3.6em;
   box-sizing: border-box;
-  color: #71747A;
+  color: #ACAEB2;
   font-family: 'Open Sans', Arial, sans-serif;
   text-shadow: 0 1px 0 #FFF;
 }
@@ -136,7 +135,7 @@ input:focus {
   display: block;
   width: 100%;
   line-height: 2em;
-  background: rgba(114, 212, 202, 1);
+  background: #7C6885;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -148,7 +147,7 @@ input:focus {
 }
 
 .authorization__btn:hover {
-  background: linear-gradient(to bottom, rgba(107, 198, 186, 1) 0%, rgba(57, 175, 154, 1) 100%);
+  background: linear-gradient(to bottom, #5A9BF2 0%, #5A9BF2 100%);
 }
 
 .buauthorization__btntton:active {

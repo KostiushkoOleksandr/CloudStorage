@@ -11,6 +11,7 @@ import {
 } from "../../reducers/fileReducer";
 import Uploader from "./uploader/Uploader";
 
+
 const Disk = () => {
   const dispatch = useDispatch();
   const currentDir = useSelector((state) => state.files.currentDir);
@@ -74,14 +75,14 @@ const Disk = () => {
     >
       <div className="disk__btns">
         <button className="disk__back" onClick={() => backClickHandler()}>
-          Назад
+          Back
         </button>
         <button className="disk__create" onClick={() => showPopupHandler()}>
-          Створити папку
+          Create a folder
         </button>
         <div className="disk__upload">
           <label htmlFor="disk__upload-input" className="disk__upload-label">
-            Завантажити
+            Download to disk
           </label>
           <input
             multiple={true}
@@ -96,9 +97,9 @@ const Disk = () => {
           onChange={(e) => setSort(e.target.value)}
           className="disk__select"
         >
-          <option value="name">За іменем</option>
-          <option value="type">За типом</option>
-          <option value="date">За датою</option>
+          <option value="name">By name</option>
+          <option value="type">By type</option>
+          <option value="date">By Date</option>
         </select>
         <button
           className="disk__plate"

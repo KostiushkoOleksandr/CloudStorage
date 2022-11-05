@@ -8,7 +8,7 @@ body {
 
 .navbar {
   display: flex;
-  height: 70px;
+  height: 120px;
   justify-content: center;
   background-color: white;
   width: 100%;
@@ -57,7 +57,11 @@ body {
 }
 
 .navbar__logo{
-  height: 60px;
+  height: 100px;
   width: auto;
-  margin-top: 10px;
+  
+}
+
+.search{
+  width: 30px;
 }

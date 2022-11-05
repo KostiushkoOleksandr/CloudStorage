@@ -39,11 +39,15 @@
 .file:hover .file__download {
   grid-column-start: 5;
   display: block;
+  width: 20px;
+  cursor: pointer;
 }
 
 .file:hover .file__delete {
   grid-column-start: 6;
   display: block;
+  width: 20px;
+  cursor: pointer;
 }
 
 .file-plate {
@@ -62,6 +66,7 @@
 
 .file-plate__btns {
   display: none;
+  width: 20px;
 }
 
 .file-plate:hover .file-plate__btns {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
 * {
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;  
 }
 body {
     font-family: 'Linearicons', sans-serif;
@@ -35,6 +35,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   transition: .2s ease-in-out;
   cursor: pointer;
+  border-radius: 3px;
 }
 .disk__create:before {
   content: "";
@@ -47,6 +48,7 @@ body {
   z-index: -1;
   transition: .25s ease;
   transform: translate(0, 0);
+  border-radius: 3px;
 }
 .disk__create:hover:before {
   transform: translate(4px, 4px);
@@ -70,6 +72,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   transition: .2s ease-in-out;
   cursor: pointer;
+  border-radius: 3px;
 }
 .disk__back:before {
   content: "";
@@ -82,6 +85,7 @@ body {
   z-index: -1;
   transition: .25s ease;
   transform: translate(0, 0);
+  border-radius: 3px;
 }
 .disk__back:hover:before {
   transform: translate(4px, 4px);
@@ -111,6 +115,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   transition: .2s ease-in-out;
   cursor: pointer;
+  border-radius: 3px;
 }
 .disk__upload-label:before {
   content: "";
@@ -124,6 +129,7 @@ body {
   transition: .25s ease;
   transform: translate(0, 0);
   margin-top: 2px;
+  border-radius: 3px;
 }
 .disk__upload-label:hover:before {
   transform: translate(4px, 4px);
@@ -176,6 +182,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .popup__content {
@@ -187,8 +194,39 @@ body {
   flex-direction: column;
 }
 
+/* .popup__create {
+  align-self: flex-end;
+} */
+
 .popup__create {
   align-self: flex-end;
+  margin-left: 10px;
+  padding: 1px 10px;
+  color: #232323;
+  background: transparent;
+  border: 1px solid #232323;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: .1em;
+  font-family: 'Montserrat', sans-serif;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.popup__create:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background: #0480BE;
+  z-index: -1;
+  transition: .25s ease;
+  transform: translate(0, 0);
+}
+.popup__create:hover:before {
+  transform: translate(4px, 4px);
 }
 
 .popup__header {
@@ -224,6 +262,12 @@ body {
   border-color: #566885 transparent #566885 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
+.popup__close{
+  width: 25px;
+  cursor: pointer;
+}
+
 
 @keyframes lds-dual-ring {
   0% {
