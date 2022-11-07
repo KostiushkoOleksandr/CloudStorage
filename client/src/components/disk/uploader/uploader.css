@@ -1,5 +1,9 @@
 .uploader {
+<<<<<<< HEAD
+  height: 200px;
+=======
   height: 300px;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   width: 300px;
   position: fixed;
   background-color: #9194C7;

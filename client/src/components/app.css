@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
+=======
   color: #566885;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 }
 
 body {
@@ -20,7 +23,11 @@ body {
 }
 
 .wrap {
+<<<<<<< HEAD
+  width: 1145px;
+=======
   width: 1150px;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   display: flex;
   flex-direction: column;
 }

@@ -10,7 +10,24 @@ body {
 }
 
 .sidebar_icon {
+<<<<<<< HEAD
+    cursor: pointer;
+    width: 30px;
+    padding: 8px 10px;
+
+}
+
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    border-right: 1px solid #454545;
+    background-color: blueviolet;
+    padding: 10px;
+=======
     width: 45px;
     cursor: pointer;
     margin-right: auto;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 }

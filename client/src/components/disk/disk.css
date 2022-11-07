@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap&subset=cyrillic');
 * {
     padding: 0;
+<<<<<<< HEAD
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Linearicons', sans-serif;
+    color: #566885;
+}
+
+=======
     box-sizing: border-box;  
 }
 body {
@@ -8,6 +17,7 @@ body {
 }
 
 
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 .disk {
   margin-top: 20px;
 }
@@ -44,7 +54,11 @@ body {
   left: 5px;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  background: #80DEEA;
+=======
   background: #32D4E2;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   z-index: -1;
   transition: .25s ease;
   transform: translate(0, 0);
@@ -81,7 +95,11 @@ body {
   left: 5px;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  background: #81D4FA;
+=======
   background: #0480BE;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   z-index: -1;
   transition: .25s ease;
   transform: translate(0, 0);
@@ -124,7 +142,11 @@ body {
   left: 5px;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+  background: #80CBC4;
+=======
   background: #97CAE4;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   z-index: -1;
   transition: .25s ease;
   transform: translate(0, 0);

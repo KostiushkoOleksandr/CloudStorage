@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 footer{
     margin-top: 500px;
     content: '';
@@ -15,7 +19,11 @@ footer{
     width: 100vw;
     font-family: "Open Sans";
     padding-top: 40px;
+<<<<<<< HEAD
+    color: #1C9AEA;
+=======
     color: #fff;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 }
 .footer-content{
     display: flex;
@@ -48,7 +56,11 @@ footer{
 }
 .socials a{
     text-decoration: none;
+<<<<<<< HEAD
+    color: #1C9AEA;
+=======
     color: #fff;
+>>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 }
 .socials a i{
     font-size: 1.1rem;
