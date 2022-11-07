@@ -46,7 +46,6 @@ const Navbar = () => {
       <div className="container">
         <img src={Logo} alt="" className="navbar__logo" />
         {isAuth && (
-<<<<<<< HEAD
           <div class="search">
             <input
               value={searchName}
@@ -59,15 +58,6 @@ const Navbar = () => {
               <i class="fa fa-search"></i>
             </button>
           </div>
-=======
-          <input
-            value={searchName}
-            onChange={(e) => searchChangeHandler(e)}
-            className="navbar__search"
-            type="text"
-            placeholder="Find your document"
-          />
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
         )}
         {!isAuth && (
           <div className="navbar__login">

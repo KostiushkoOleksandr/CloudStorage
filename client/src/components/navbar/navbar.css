@@ -25,19 +25,11 @@ body {
   margin-left: auto;
   margin-right: 20px;
   cursor: pointer;
-<<<<<<< HEAD
 
 }
 
 
 .navbar__exit {
-=======
-  
-}
-
-
-.navbar__exit{
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
   margin-left: 250px;
   cursor: pointer;
   text-decoration: none;
@@ -46,15 +38,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-.navbar__search {
-  width: 300px;
-  margin-left: auto;
-}
-
-
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 .navbar__avatar {
   width: 40px;
   height: 40px;
@@ -67,7 +50,6 @@ body {
   align-items: center;
 }
 
-<<<<<<< HEAD
 .navbar__logo {
   height: 100px;
   width: auto;
@@ -106,14 +88,4 @@ body {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-=======
-.navbar__logo{
-  height: 100px;
-  width: auto;
-  
-}
-
-.search{
-  width: 30px;
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
 }

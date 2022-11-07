@@ -14,11 +14,7 @@ const Popup = () => {
     function createHandler() {
         dispatch(createDir(currentDir, dirName))
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
     return (
         <div className="popup" onClick={() => dispatch(setPopupDisplay('none'))} style={{display: popupDisplay}}>
             <div className="popup__content" onClick={(event => event.stopPropagation())}>

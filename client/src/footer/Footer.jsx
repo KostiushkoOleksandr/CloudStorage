@@ -39,11 +39,7 @@ const Footer = () => {
         </div>
         <div class="footer-bottom">
           <p>
-<<<<<<< HEAD
           Cloud Storage &copy;2022-2023. designed by <span>Oleksandr Kostiushko</span>
-=======
-          Cloud Storage &copy;2022-2023. designed by <span>alexkost</span>
->>>>>>> e7d6e0627e9bd7588e0fe3271f0b87fb0d4fe504
           </p>
         </div>
       </footer>
