@@ -82,7 +82,7 @@ const Disk = () => {
         </button>
         <div className="disk__upload">
           <label htmlFor="disk__upload-input" className="disk__upload-label">
-            Download to disk
+            Upload to cloud
           </label>
           <input
             multiple={true}
