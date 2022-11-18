@@ -13,7 +13,7 @@ const Profile = () => {
     return (
         <div>
             <button onClick={() => dispatch(deleteAvatar())}>Видалити аватар</button>
-            {/* <input accept="image/*" onChange={e => changeHandler(e)} type="file" placeholder="Завантажити аватар"/> */}
+             {/*<input accept="image/*" onChange={e => changeHandler(e)} type="file" placeholder="Завантажити аватар"/>*/}
         </div>
     );
 };
